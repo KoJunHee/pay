@@ -1,0 +1,12 @@
+spring:
+    datasource:
+        hikari:
+            jdbc-url: jdbc:h2:mem:testdb
+            driver-class-name: org.h2.Driver
+            username: sa
+            password:
+    jpa:
+        generate-ddl: true
+        database-platform: H2
+        hibernate:
+            ddl-auto: create-drop
